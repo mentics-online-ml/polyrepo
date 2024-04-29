@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
-source "$SCRIPT_DIR"/common.sh
+. "${BASH_SOURCE%/*}/common.sh"
 
 script=$(basename "$0")
 
