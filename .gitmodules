@@ -1,0 +1,27 @@
+[submodule "online-ml"]
+	path = online-ml
+	url = git@github.com:mentics-ml-demo/online-ml.git
+[submodule "shared-types"]
+	path = shared-types
+	url = git@github.com:mentics-ml-demo/shared-types.git
+[submodule "series-store"]
+	path = series-store
+	url = git@github.com:mentics-ml-demo/series-store.git
+[submodule "kv-store"]
+	path = kv-store
+	url = git@github.com:mentics-ml-demo/kv-store.git
+[submodule "ingest"]
+	path = ingest
+	url = git@github.com:mentics-ml-demo/ingest.git
+[submodule "predict"]
+	path = predict
+	url = git@github.com:mentics-ml-demo/predict.git
+[submodule "label"]
+	path = label
+	url = git@github.com:mentics-ml-demo/label.git
+[submodule "train"]
+	path = train
+	url = git@github.com:mentics-ml-demo/train.git
+[submodule "ui"]
+	path = ui
+	url = git@github.com:mentics-ml-demo/ui.git
