@@ -1,27 +1,27 @@
 [submodule "online-ml"]
 	path = online-ml
-	url = git@github.com:mentics-ml-demo/online-ml.git
+	url = git@github.com:mentics-online-ml/online-ml.git
 [submodule "shared-types"]
 	path = shared-types
-	url = git@github.com:mentics-ml-demo/shared-types.git
+	url = git@github.com:mentics-online-ml/shared-types.git
 [submodule "series-store"]
 	path = series-store
-	url = git@github.com:mentics-ml-demo/series-store.git
+	url = git@github.com:mentics-online-ml/series-store.git
 [submodule "kv-store"]
 	path = kv-store
-	url = git@github.com:mentics-ml-demo/kv-store.git
+	url = git@github.com:mentics-online-ml/kv-store.git
 [submodule "ingest"]
 	path = ingest
-	url = git@github.com:mentics-ml-demo/ingest.git
+	url = git@github.com:mentics-online-ml/ingest.git
 [submodule "predict"]
 	path = predict
-	url = git@github.com:mentics-ml-demo/predict.git
+	url = git@github.com:mentics-online-ml/predict.git
 [submodule "label"]
 	path = label
-	url = git@github.com:mentics-ml-demo/label.git
+	url = git@github.com:mentics-online-ml/label.git
 [submodule "train"]
 	path = train
-	url = git@github.com:mentics-ml-demo/train.git
+	url = git@github.com:mentics-online-ml/train.git
 [submodule "ui"]
 	path = ui
-	url = git@github.com:mentics-ml-demo/ui.git
+	url = git@github.com:mentics-online-ml/ui.git
