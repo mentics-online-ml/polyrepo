@@ -21,6 +21,7 @@ function run_parallel() {
     echo "Done"
 
     for ((i=1; i < ${#args[@]}; i++)); do
+        echo "${args[$i]}"
         cat "${outdir}/${i}".log
     done
 

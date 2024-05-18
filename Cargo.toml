@@ -8,5 +8,4 @@ members = [
     "predict",
     "label",
     "train",
-    "ui",
 ]
