@@ -6,3 +6,5 @@ set -e
 submodule_foreach_parallel "git add ."
 submodule_foreach_parallel "test -z \"\$(git status --porcelain)\" || git commit -m '$1'"
 submodule_foreach_parallel "git push"
+
+# TODO: this doesn't work if the comment contains a '

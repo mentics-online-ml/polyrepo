@@ -9,3 +9,6 @@ members = [
     "label",
     "train",
 ]
+
+[profile.dev.package.burn]
+opt-level = 3
