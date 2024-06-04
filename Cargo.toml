@@ -10,5 +10,12 @@ members = [
     "train",
 ]
 
-[profile.dev.package.burn]
+# Needed for profiling release builds
+# [profile.release]
+# debug = 1
+
+# [profile.dev.package.burn]
+# opt-level = 3
+
+[profile.dev.package."*"]
 opt-level = 3

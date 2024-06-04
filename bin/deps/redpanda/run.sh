@@ -3,7 +3,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit
 
 # https://docs.redpanda.com/current/get-started/quick-start/
 
-if docker ps | grep -q redpanda; then
+if docker ps | grep -q redpanda-console; then
     echo "RedPanda already running"
 else
     echo "Starting RedPanda"
