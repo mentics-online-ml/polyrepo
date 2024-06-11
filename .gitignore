@@ -3,3 +3,4 @@ target
 Cargo.lock
 /ignore
 /*.log
+.VSCodeCounter

@@ -25,3 +25,6 @@
 [submodule "ui"]
 	path = ui
 	url = git@github.com:mentics-online-ml/ui.git
+[submodule "shared-burn"]
+	path = shared-burn
+	url = git@github.com:mentics-online-ml/shared-burn.git

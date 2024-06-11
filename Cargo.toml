@@ -2,6 +2,7 @@
 resolver = "2"
 members = [
     "shared-types",
+    "shared-burn",
     "series-store",
     "kv-store",
     "ingest",
@@ -11,8 +12,8 @@ members = [
 ]
 
 # Needed for profiling release builds
-# [profile.release]
-# debug = 1
+[profile.release]
+debug = 1
 
 # [profile.dev.package.burn]
 # opt-level = 3
