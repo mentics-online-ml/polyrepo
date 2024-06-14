@@ -1,7 +1,15 @@
-# polyrepo
+## Streaming Online Machine Learning Processing
 
-This is just a convenience repo that uses submodules to put all the other repos as siblings of each other so that path dependencies can be relative. This repo contains no code but only some convenience scripts in dealing with the multiple repos/projects.
+This project applies a machine learning model against a rolling window of streaming time series data.
 
-There are a number contributing factors in choosing between mono- vs. poly- repo. In this particular case, I was concerned about cargo's repo dependency mechanism. It cannot specify a subdirectory of a git repo. Rather it will download the entire repo and search for Cargo.toml files until it finds the one you're looking for. One of the particular long term goals of this project is to have all processes be exceptionally lean, and that might be a challenge. Granted... ultimately a private artifact/crate repo is likely how one would manage things in the long term rather than repo dependencies in order to be more precise with dependency management, however, this will work for now.
+ingest accesses the data (currently via websocket) and publishes it to the event topic in RedPanda.
 
-The challenge of managing changes across multiple repos can be mitigated via versioning, which is required anyway to manage deployments safely. Testing downstreams after upstream dependencies can also be automated for polyrepos.
+predict subscribes to the event topic and applies the machine learning model to the recent window.
+
+label subscribes to the event topic, determines the appropriate label for each event in the series based on the events after it, and pushes this to the label topic.
+
+train subscribes to the label topic and trains the machine learning model with the new data along with some previous data. It then stores the new data and updates previous loss and output data into a database.
+
+The other projects provide shared code for the above four services.
+
+This repository is a cargo workspace which uses git submodules for all the services for the project so it can all be developed easily together. The bin directory has some scripts to make it easier to push and pull changes for all submodules together.
