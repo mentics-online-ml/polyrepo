@@ -4,6 +4,7 @@ if docker ps | grep -q scylla; then
     echo "Scylla already running"
 elif docker ps -a | grep -q scylla; then
     echo "Starting existing scylla container"
+    docker start scylla
 else
     echo "Starting new scylla container"
     docker run --name scylla -d scylladb/scylla --developer-mode 1
